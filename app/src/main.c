@@ -9,9 +9,9 @@
 
 int main(void)
 {
-    cb_io_init();
-    cb_led_set(CB_D15);
-    cb_led_clr(CB_D16);
+    cb_led_init();
+    cb_led_on(CB_D15);
+    cb_led_off(CB_D16);
     for (;;)
     {
         cb_led_tgl(CB_D15);
